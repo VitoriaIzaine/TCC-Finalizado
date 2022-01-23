@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/*-------------------Configura todo o html e todo o body------------------------------*/
+
+html, body {
+  margin: 0;
+  Box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  Justify-content: center;
+  Padding: 0;
+  background: url("/static/images/fundo_dicas.b52b2df8e576.png")  50% 0 no-repeat fixed;
+}
+
+/*----------------------------Cards--------------------------------------*/
+.somosJob {
+	display: flex;
+    justify-content: center;
+	opacity: 1;
+	margin-top: 5%;
+	margin-left: 200px;
+}
+
+.imagem{
+	margin-left: 50px;
+	margin-top: -5%;
+}
+
+.image_panel {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.image_panel h2{
+	color: black;
+	text-align:justify;
+	Justify-content: center;
+	font-size:18px;
+	margin-top:0px;
+}
+
+.card{
+	width:350px;
+	height:250px;
+	margin-left:0px;
+}
+.card h4{
+	text-align:center;
+	color:black;
+
+}
+
+.card p{
+	text-align: center-left;
+	margin-left:30px;
+	color:black;
+}
+
+#btn_gerar{
+	width: 120px;
+    color: #fff;
+    margin-left: 62%;
+    border: solid 1px white;
+    background-color: #1e88d9;
+    border-radius: 8px;
+	margin-top: -25px;
+}
+
+#btn_avaliar{
+	width: 120px;
+    color: #fff;
+    margin-left: 62%;
+    border: solid 1px white;
+    background-color: #1e88d9;
+    border-radius: 8px;
+}
+/* -----------------------------------Responsividade------------------------------------------- */
+@media screen and (max-width: 991px) {
+
+.card{
+	width:250px;
+	height:250px;
+	margin-left:0px;
+}
+
+.card h4{
+	text-align:center;
+	color:black;
+	margin-top: -55px;
+}
+
+.card p{
+	text-align: center-left;
+	margin-left:20px;
+	color:black;
+}
+
+#btn_gerar{
+	width: 120px;
+    color: #fff;
+    margin-left: 50%;
+    border: solid 1px white;
+    background-color: #1e88d9;
+    border-radius: 8px;
+	margin-top: -25px;
+}
+
+#btn_avaliar{
+	width: 120px;
+    color: #fff;
+    margin-left: 50%;
+    border: solid 1px white;
+    background-color: #1e88d9;
+    border-radius: 8px;
+}
+
+}
+
+@media screen and (max-width: 753px) {
+	.somosJob {
+	display: flex;
+    justify-content: center;
+	opacity: 1;
+	margin-top: 5%;
+	margin-left: 300px;
+}
+}
+
+@media screen and (max-width: 659px) {
+	.somosJob {
+	display: flex;
+    justify-content: center;
+	opacity: 1;
+	margin-top: 5%;
+	margin-left: 350px;
+}
+}
+
+@media screen and (max-width: 621px) {
+	.somosJob {
+	display: flex;
+    justify-content: center;
+	opacity: 1;
+	margin-top: 5%;
+	margin-left: 500px;
+}
+}

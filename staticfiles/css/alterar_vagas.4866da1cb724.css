@@ -1,0 +1,53 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    background-color:red;
+	
+}#conteudoContido{
+	background-color:#222a77;
+	width:95%;
+	height: 50px;
+    margin: auto;
+    display: flex;
+	color: white;
+	align-items: center;
+    justify-content: center;
+}
+
+#conteudoContido2{
+	background-color:#222a77;
+	width:95%;
+	height: 150px;
+    margin: auto;
+    display: flex;
+	color: white;
+	background-color: rgba(30, 38, 107, 0.5);
+}
+
+#imgDelete{
+	width: 26px;
+	height: 40px;
+}
+
+#SelectAltera{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+

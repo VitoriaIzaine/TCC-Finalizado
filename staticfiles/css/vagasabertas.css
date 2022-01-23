@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/*-------------------Configura todo o html e todo o body------------------------------*/
+
+html, body {
+  margin: 0;
+  Box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  Justify-content: center;
+  Padding: 0;
+}
+
+/*-------------------------- post --------------------------*/
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+fieldset.grupo {
+    float:  left;
+}
+
+
+/*-------------------------- Lado da descricao --------------------------*/
+
+.descricao{
+	background-color: white;
+	margin-left: 50px;
+}
+
+.descartar{
+	width: 20px;
+	height: 20px;
+}
+
+.favoritar_vaga{
+	width: 20px;
+	height: 25px;
+}
+
+.candidatar{
+	width: 20px;
+	height: 20px;
+}
+
+.icones{
+	margin-left: 300px;
+}
+
+div.box {
+	width: 60px;
+	display: inline-block;
+}
+
+h5{
+	color: black;
+	padding-top: 50px;
+	margin-left: 300px;
+}
+
+.data{
+	color: black;
+	margin-left: 295px;
+	margin-top: 2%;
+	font-size: 12px;
+}
+
+.desc{
+	margin-left: 75px;
+	margin-top: 40px;
+	color: black;
+}
+
+.pre_requisitos{
+	margin-left: 75px;
+	color: black;
+}
+
+.jor_hor{
+	margin-left: 75px;
+	color: black;
+}
+
+.salario{
+	margin-left: 75px;
+	color: black;
+}
+/*--------------------------Lado empresa--------------------------*/
+
+.empresa{
+	width: 450px;
+	height: 800px;
+	background-color: #1E88D9;
+}
+
+.circle {
+	margin-top: 250px;
+	margin-left: 165px;
+	background-color: white;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	position: relative;
+}
+
+.circle img {
+	bottom: 0;
+	width: 100%;
+}
+
+
+h4 {
+	margin-left: 190px;
+}
+
+.ver_empresa {
+	margin-left: 185px;
+	color: white;
+}
+
+#corlink { color: white; }
+
+/*-------------------------------Cards-------------------------------*/
+main.cards {
+    display: flex;
+    padding: 0px;
+	margin-left: 75px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+	width: 600px;
+    height: 80px;
+    margin-left: 40px;
+	background-color:#1E88D9;
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 10px;
+    height: 20px;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+main.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.cards section.card.contact {
+    box-shadow: 20px 20px 50px -30px #DBC4FF;
+}
+main.cards section.card.shop {
+    box-shadow: 20px 20px 50px -30px #AFD6FF;
+}
+main.cards section.card.about {
+    box-shadow: 20px 20px 50px -30px #FFC1D5;
+}
+
+/*-------------------------------Responsividade-------------------------------*/
+@media screen and (max-width: 1175px) {
+ .empresa{
+	width: 300px;
+	height: 800px;
+	background-color: #1E88D9;
+}
+
+.circle {
+	margin-top: 250px;
+	margin-left: 100px;
+	background-color: white;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+}
+
+h4 {
+	margin-left: 70px;
+}
+
+.ver_empresa {
+	margin-left: 115px;
+	color: white;
+}
+}
+
+@media screen and (max-width: 1025px) {
+ .empresa{
+	width: 300px;
+	height: 800px;
+	background-color: #1E88D9;
+}
+
+.circle {
+	margin-top: 250px;
+	margin-left: 100px;
+	background-color: white;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+}
+
+h4 {
+	margin-left: 70px;
+}
+
+.ver_empresa {
+	margin-left: 115px;
+	color: white;
+}
+
+.descricao{
+	background-color: white;
+	margin-left: 15px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+	width: 400px;
+    height: 80px;
+    margin-left: 40px;
+	background-color:#1E88D9;
+}
+
+h5{
+	color: black;
+	padding-top: 50px;
+	margin-left: 200px;
+}
+
+.data{
+	color: black;
+	margin-left: 195px;
+	margin-top: 2%;
+	font-size: 12px;
+}
+
+}
+
+@media screen and (max-width: 953px) {
+
+.descricao{
+	background-color: white;
+	margin-left: 10px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+	width: 300px;
+    height: 80px;
+    margin-left: 40px;
+	background-color:#1E88D9;
+}
+
+h5{
+	color: black;
+	padding-top: 50px;
+	margin-left: 140px;
+}
+
+.data{
+	color: black;
+	margin-left: 135px;
+	margin-top: 2%;
+	font-size: 12px;
+}
+
+.icones{
+	margin-left: 150px;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+
+.descricao{
+	background-color: white;
+	margin-left: 10px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+	width: 250px;
+    height: 80px;
+    margin-left: 40px;
+	background-color:#1E88D9;
+}
+
+h5{
+	color: black;
+	padding-top: 50px;
+	margin-left: 140px;
+}
+
+.data{
+	color: black;
+	margin-left: 135px;
+	margin-top: 2%;
+	font-size: 12px;
+}
+
+.icones{
+	margin-left: 150px;
+}
+
+}
+
+@media screen and (max-width: 759px) {
+
+.descricao{
+	background-color: white;
+	margin-left: 10px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+	width: 220px;
+    height: 80px;
+    margin-left: 40px;
+	background-color:#1E88D9;
+}
+
+h5{
+	color: black;
+	padding-top: 50px;
+	margin-left: 120px;
+}
+
+.data{
+	color: black;
+	margin-left: 115px;
+	margin-top: 2%;
+	font-size: 12px;
+}
+
+.icones{
+	margin-left: 150px;
+}
+
+}
+
+@media screen and (max-width: 650px) {
+
+ .empresa{
+	width: 250px;
+	height: 800px;
+	background-color: #1E88D9;
+}
+
+.circle {
+	margin-top: 250px;
+	margin-left: 80px;
+	background-color: white;
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	overflow: hidden;
+	position: relative;
+}
+
+h4 {
+	margin-left: 50px;
+}
+
+.ver_empresa {
+	margin-left: 90px;
+	color: white;
+}
+
+.descricao{
+	background-color: white;
+	margin-left: 5px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+	width: 250px;
+    height: 80px;
+    margin-left: 40px;
+	background-color:#1E88D9;
+}
+
+h5{
+	color: black;
+	padding-top: 50px;
+	margin-left: 130px;
+}
+
+.data{
+	color: black;
+	margin-left: 125px;
+	margin-top: 2%;
+	font-size: 12px;
+}
+
+.icones{
+	margin-left: 150px;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+ .empresa{
+	width: 190px;
+	height: 800px;
+	background-color: #1E88D9;
+}
+
+.circle {
+	margin-top: 250px;
+	margin-left: 55px;
+	background-color: white;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	overflow: hidden;
+	position: relative;
+}
+
+h4 {
+	margin-left: 17px;
+}
+
+.ver_empresa {
+	margin-left: 60px;
+	color: white;
+	font-size: 13px;
+}
+
+.descricao{
+	background-color: white;
+	margin-left: 3px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+	width: 200px;
+    height: 70px;
+    margin-left: 40px;
+	background-color:#1E88D9;
+}
+
+h5{
+	color: black;
+	padding-top: 50px;
+	margin-left: 110px;
+}
+
+.data{
+	color: black;
+	margin-left: 105px;
+	margin-top: 2%;
+	font-size: 12px;
+}
+
+.icones{
+	margin-left: 120px;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+ .empresa{
+	width: 360px;
+	height: 300px;
+	background-color: #1E88D9;
+}
+
+.circle {
+	margin-top: 120px;
+	margin-left: 140px;
+	background-color: white;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	overflow: hidden;
+	position: relative;
+}
+
+h4 {
+	margin-left: 100px;
+}
+
+.ver_empresa {
+	margin-left: 140px;
+	color: white;
+	font-size: 13px;
+}
+
+.descricao{
+	background-color: white;
+	margin-left: 3px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+	width: 200px;
+    height: 70px;
+    margin-left: 40px;
+	background-color:#1E88D9;
+}
+
+h5{
+	color: black;
+	padding-top: 50px;
+	margin-left: 110px;
+}
+
+.data{
+	color: black;
+	margin-left: 105px;
+	margin-top: 2%;
+	font-size: 12px;
+}
+
+.icones{
+	margin-left: 100px;
+}
+
+}
+
+

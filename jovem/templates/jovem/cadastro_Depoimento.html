@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Pagina principal interdace do JobTeens">
+    <link rel="stylesheet" href="{% static 'css/cadastro_vagas.css' %}"/>
+    <title>Cadastro de Depoimentos</title>
+</head>
+
+<body>
+{% include 'menu_jovem.html' %}
+<div id="div">
+    <div id="conteudoContido">
+        <h1>Depoimento</h1>
+    </div>
+
+    <br><br>
+    {% include 'msg.html' %}
+    <form action="{% url 'cadastro_Depoimento' %}" method="post" enctype="multipart/form-data">
+
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" value="Cadastrar">
+    </form>
+</div>
+{% include 'footer.html' %}
+</body>
+
+</html>

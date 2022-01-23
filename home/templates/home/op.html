@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cadastro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="{% static 'css/op.css' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet"/>
+
+
+    <style>
+			.list-group{
+				position: absolute;
+				top: 50%; /* posiciona na metade da tela */
+				margin-top: -50px; /* e retrocede metade da altura */
+				left: 50%; /* posiciona na metade da tela */
+				margin-left: -180px; /* e retrocede metade da largura */
+			}
+			
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			.link{
+			  background: #3399ff;
+				padding: 20px;
+				width: 300px;
+				text-decoration: none;
+			}
+			
+			.link2{
+			  background: #3399ff;
+				padding: 20px;
+				width: 300px;
+				text-decoration: none;
+				
+			}		
+
+			.link3{
+			color: white;
+			text-decoration:none; 
+			font-size: 30px;
+			text-align: center;
+
+			}
+	
+
+
+    </style>
+</head>
+
+<body>
+{% include 'menu.html' %}
+<div class="container">
+    <br><br><br><br><br>
+    <h2>
+        <center>CADASTRAR COMO...</center>
+    </h2>
+
+    <div class="list-group">
+
+        <ul>
+            <li class="link"><a class="link3" href="{% url 'cadastrar' %}">Jovem</a></li>
+            <br>
+            <li class="link2"><a class="link3" href="{% url 'cadastro_empresa' %}">Empresa</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

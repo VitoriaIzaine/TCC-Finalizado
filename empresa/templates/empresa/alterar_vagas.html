@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Pagina principal interdace do JobsTeen">
+    <link rel="stylesheet" href="{% static 'css/vaga_altera.css' %}"/>
+    <title>Alteração de Vaga</title>
+</head>
+
+<body>
+{% include 'menu_empresa.html' %}
+<br><br>
+<div id="conteudo">
+    <div id="conteudoContido">
+        <h1>VAGAS</h1>
+    </div>
+    {% for dbs in db%}
+    <div id="conteudoContido2">
+        <div text-align="right">
+            <h2><a id="SelectAltera" href="alteraVagas.html">{{dbs.titulo}}</a></h2>
+            <p>{{dbs.descricao}}</p>
+            <a href="/delete/{{dbs.id}}/" class="btn btn-danger btnDel">
+                <img id="imgDelete" alt="imageAncora" src="{% static 'images/exclui.png' %}">
+            </a>
+            <a href="edit/{{dbs.id}}" class="btn btn-primary">Editar</a>
+            <a href="candidato/{{dbs.id}}" class="btn btn-primary">Candidatos</a>
+            <br><br>
+			{% endfor%}
+        </div>
+        <hr style="size: 10; width:90%; color: black;">
+
+    </div>
+
+    <br>
+</div>
+<br><br>
+<script src="{% static 'javascript.js' %}"></script>
+</body>
+</html>

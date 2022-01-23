@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Pagina principal interdace do JobTeens">
+    <link rel="stylesheet" href="{% static 'css/cadastro_vagas.css' %}"/>
+    <title>Cadastro de Vaga</title>
+</head>
+<body>
+{% include 'menu_empresa.html' %}
+<div id="div">
+    <div id="conteudoContido">
+        <h1>Cadastro de Vagas</h1>
+    </div>
+
+    <br><br>
+    {% include 'msg.html' %}
+    <form name="form" id="form" action="{% if db %}/update/{{db.id}}/{%else%}/create/{% endif %}" method="post">
+        {% csrf_token %}
+        {{form}}
+        <input type="text" readonly class="form-control-plaintext" name="empresa" id="empresa"
+               value="{{ user.get_username }}">
+        <input type="submit" class="btn btn-sucess" value="Enviar">
+
+    </form>
+</div>
+{% include 'footer.html' %}
+</body>
+</html>
+
+

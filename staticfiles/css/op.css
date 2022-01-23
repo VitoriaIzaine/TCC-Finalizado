@@ -1,0 +1,35 @@
+			.list-group{
+				position: absolute;
+				top: 50%; /* posiciona na metade da tela */
+				margin-top: -50px; /* e retrocede metade da altura */
+				left: 50%; /* posiciona na metade da tela */
+				margin-left: -180px; /* e retrocede metade da largura */
+			}
+			
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			.link{
+			  background: #3399ff;
+				padding: 20px;
+				width: 300px;
+				text-decoration: none;
+			}
+			
+			.link2{
+			  background: #3399ff;
+				padding: 20px;
+				width: 300px;
+				text-decoration: none;
+				
+			}		
+
+			.link3{
+			color: white;
+			text-decoration:none; 
+			font-size: 30px;
+			text-align: center;
+			}

@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Pagina principal interdace do JobTeens">
+    <link rel="stylesheet" href="{% static 'css/dicas_jovem.css'%}"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Dicas</title>
+</head>
+
+<body bgcolor="1e88d9">
+{% include 'menu_jovem.html' %}
+
+<main class="somosJob">
+    <br><br>
+    <section class="image_panel">
+        <div class="card">
+            <i class="fas fa-graduation-cap"></i>
+            <br><br><br>
+            <i class="fas fa-graduation-cap"></i>
+            <h4>Gerador de currículo</h4>
+            <br>
+            <p> Está com dúvida para criar seu currículo? Nosso gerador de currículo grátis vai ajudar você em
+                minutos! </p>
+            <a href="https://www.geradordecurriculo.com.br" id="btn_gerar" type="submit" class="btn btn-dark">
+                Gerar
+            </a>
+        </div>
+    </section>
+    <div class="imagem">
+        <img src="{% static 'gifs/curriculo.gif' %}">
+    </div>
+</main>
+
+<main class="somosJob">
+    <section class="image_panel">
+        <div class="card">
+            <i class="fas fa-graduation-cap"></i>
+            <br><br><br>
+            <i class="fas fa-graduation-cap"></i>
+            <h4>LEI DO JOVEM APRENDIZ</h4>
+            <br>
+            <p> A Lei 10.097/2000 afirma que empresas de médio e grande porte devem contratar jovens com idade entre 14
+                e 24 anos como aprendizes. </p>
+        </div>
+    </section>
+    <div class="imagem">
+        <img src="{% static 'images/lei.png' %}">
+    </div>
+</main>
+
+<main class="somosJob">
+    <section class="image_panel">
+        <div class="card">
+            <i class="fas fa-graduation-cap"></i>
+            <br><br><br>
+            <i class="fas fa-graduation-cap"></i>
+            <h4>Faça o seu depoimento!</h4>
+            <br>
+            <p> Nos ajude compartilhando a sua experiência com o JobsTeen. </p>
+            <a href="{%url 'cadastro_Depoimento'%}" id="btn_avaliar" type="submit" class="btn btn-dark">Avaliar
+            </a>
+        </div>
+    </section>
+    <div class="imagem">
+        <img src="{% static 'gifs/avaliar.gif' %}">
+    </div>
+</main>
+</body>
+</html>
+{% include 'footer.html' %}

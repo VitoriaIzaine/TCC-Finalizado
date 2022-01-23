@@ -1,0 +1,129 @@
+/* -----------------------------------Foto de perfil------------------------------------------- */
+.personal-image {
+    text-align: center;
+}
+
+.tam{
+	height: 120px;
+}
+
+#linha{
+	size:10px;
+	width:100%;
+	color:black;
+  }
+  
+#botao{
+	width: 20%;
+    color: #fff;
+    margin-left: 62%;
+    border: solid 1px white;
+    background-color: #1e88d9;
+    border-radius: 8px;
+     
+}
+
+/*--------------------------Tabela--------------------------*/
+table{
+	width: 1000px;
+}
+
+td{
+	height: 50px;
+	border: 1px solid black;
+	border-color: #1E88D9;
+}
+
+.link3{
+    color: white;
+	text-decoration:none;
+	font-size: 30px;
+	text-align: center;
+}
+
+th{
+	height: 50px;
+	color: #1E88D9;
+}
+
+@media screen and (max-width: 950px) {
+	
+	table{
+	width: 600px;
+}
+  
+  .personal-image {
+    text-align: center;
+}
+
+
+#botao{
+	width: 20%;
+    color: #fff;
+    margin-left: 46%;
+    border: solid 1px white;
+    background-color: #1e88d9;
+    border-radius: 8px;
+     
+}
+
+#linha{
+	size:10px;
+	width:100%;
+	color: black;
+  }
+
+}
+
+@media screen and (max-width: 843px) {
+	
+	table{
+	width: 400px;
+}
+  
+td,th{
+	border-right: 15px;
+    border-right-color: white;
+    border-right-style: groove;
+} 
+
+  .personal-image {
+    text-align: center;
+}
+
+
+}
+
+@media screen and (max-width: 617px) {
+	
+	table{
+	width: 300px;
+}
+  
+  .personal-image {
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width: 490px) {
+	
+	table{
+	width: 200px;
+}
+  
+  .personal-image {
+    text-align: center;
+}
+
+#botao{
+	width: 20%;
+    color: #fff;
+    margin-left: 30%;
+    border: solid 1px white;
+    background-color: #1e88d9;
+    border-radius: 8px;
+     
+}
+
+}

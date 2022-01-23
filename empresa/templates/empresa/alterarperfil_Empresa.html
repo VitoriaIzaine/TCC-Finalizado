@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Pagina principal interdace do JobTeens">
+    <link rel="stylesheet" href="{%static 'css/alterar_perfil.css'%}"/>
+    <title>Alterar Perfil</title>
+</head>
+<body>
+{% include 'menu_empresa.html' %}
+
+
+<form name="form" id="form" action="{% if pf %}/update_empresa/{{pf.id}}/{%else%}/create_empresa/{% endif %}"
+      method="post">
+    {% csrf_token %}
+    {{form_perfil}}
+    <input type="submit" class="btn btn-sucess" value="Enviar">
+
+</form>
+{% include 'footer.html' %}
+</body>
+</html>

@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Pagina principal interdace do JobsTeen">
+    <link rel="stylesheet" href="{% static 'css/candidato.css' %}"/>
+    <title>Candidatos</title>
+</head>
+
+<body>
+{% include 'menu_empresa.html' %}
+<h1 align="center">Candidatos</h1>
+<br><br>
+{% for tas in ts%}
+<main class="cards">
+    <section class="card contact">
+        <div class="icon">
+            <img src="#" alt="">
+        </div>
+        <div class="circle">
+            <abbr title="Ver empresa"><img  src="{% static 'images/iconeUser.png' %}"></abbr>
+        </div>
+        <div class="nome_vaga">
+            <p>Nome do Candidato:</p>
+            <h3>{{tas.nome_candidado}}</h3>
+        </div>
+
+    </section>
+</main>
+<hr style="size: 10; width:90%; color: black;">
+{% endfor %}
+</body>
+</html>

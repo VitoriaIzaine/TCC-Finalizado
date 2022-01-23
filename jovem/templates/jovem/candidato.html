@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Pagina principal interdace do JobTeens">
+    <link rel="stylesheet" href="{% static 'css/ver_vagas.css'%}"/>
+    <title>Candidatar</title>
+</head>
+<body>
+{% include 'menu_jovem.html' %}
+<br>
+<h1 align="center">Candidatar</h1>
+<br><br>
+{% include 'msg.html' %}
+    <form name="form" id="form" action="/create_candidatar/" method="post" align="center">
+        {% csrf_token %}
+        <p>ID VAGA:<input type="text" readonly class="form-control-plaintext" name="id_vagaa" id="id_vagaa" value="{{if.id}}" style="text-align:center; color:red"></p>
+		<br>
+		<fieldset>
+			<input type="text" name="nome_candidado" id="nome_candidado" placeholder="Nome" required>
+			<input type="text" name="data_nasc" id="data_nasc" placeholder="Data nascimento" required>
+			<input type="text" name="rua" id="rua" placeholder="Rua" required>
+		</fieldset>
+		<br>
+		<fieldset>
+			<input type="text" name="numero" id="numero" placeholder="Número" required>
+			<input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
+			<input type="text" name="cidade_c" id="cidade_c" placeholder="Cidade" required>
+		</fieldset>
+        <input type="submit" class="btn btn-sucess" value="Enviar" id="btn_enviar">
+
+    </form>
+{% include 'footer.html' %}
+
+</body>
+</html>

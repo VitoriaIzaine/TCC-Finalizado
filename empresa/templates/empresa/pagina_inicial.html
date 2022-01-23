@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Pagina principal interdace do JobsTeen">
+    <link rel="stylesheet" href="{% static 'css/inicio.css' %}"/>    
+	<title>Página Inicial</title>
+</head>
+
+<body>
+{% include 'menu_empresa.html' %}
+
+<div id="conteudo">
+    <a href="#">
+        <img id="imginicial" alt="imageAncora" src="{% static 'images/imginicial.jpg' %}">
+    </a>
+    <br><br>
+    <main class="cards">
+        <section class="card contact">
+            <div class="icon">
+                <img src="{% static 'images/logo_missao.png' %}" alt=""/>
+            </div>
+            <h3>Adicionar Novas vagas:</h3>
+            <span style="text-align: justify">Voce pode adicionar as vagas...</span>
+            <a href="{%url 'form' %}" id="btn_gerar" type="submit" class="btn btn-dark">
+                Adicionar
+            </a>
+        </section>
+        <section class="card shop">
+            <div class="icon">
+                <img src="{% static 'images/logo_visao.png' %}" alt=""/>
+            </div>
+            <h3>Visualizar Vagas:</h3>
+            <span style="text-align: justify">Voce pode visualizar as vagas...</span>
+            <a href="{%url 'alterar_vagas'%}" id="btn_gerar" type="submit" class="btn btn-dark">
+                Visualizar
+            </a>
+        </section>
+    </main>
+    {% include 'footer.html' %}
+
+</body>
+
+</html>
